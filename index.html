@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Gems Swapper</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+	<div class="ui" id="ui">
+		<!-- <h1>Gem Dash</h1> -->
+		<p id="score">Score: <span class="score">0</span></p>
+		<p id="combo">Combo: <span class="combo">0</span></p>
+		<p id="time">Time: <span class="time">1:00</span></p>
+		<button id="showMap" class="active"><i class="fa fa-map" aria-hidden="true"></i></button>
+		<button id="showScores" class="active"><i class="fa fa-list" aria-hidden="true"></i></button>
+
+		<!-- <p id="bestCombo">Best Combo: <span class="bestCombo">0</span></p> -->
+	</div>
+	<div id="progress">
+		<span id="progressScore">0/500</span>
+		<div id="progressBar"></div>
+	</div>
+	<div class="message">
+		<h2>Destroy as many gems as possible in 60 seconds</h2>
+		<button id="buttonStart">START</button>
+		<div id="gifContainer">
+			<img src="assets/gifs/help.gif" height="150" width="150">
+			<p>Click gem and swipe it with left mouse button to match 3 gems of the same colour</p>
+		</div>
+	</div>
+	<div class="message messageEnd">
+		<h2>Game Over</h2>
+		<h3>Your score: <span class="score"></span></h3>
+		<button id="buttonAgain">AGAIN</button></li>
+	</div>
+
+	<div id="game"></div>
+	<div id="scoreboard">
+		<h3>Highscore</h3>
+		<ol>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+	</div>
+	<div id="map"></div>
+
+
+	<script src="assets/js/vendor/jquery.min.js"></script>
+	<script src="assets/js/vendor/jquery.easing.1.3.js"></script>
+	<script src="assets/js/vendor/hammer.min.js"></script>
+	<script src="assets/js/vendor/jquery.hammer-full.min.js"></script>
+	<script src="assets/js/game.js"></script>
+</body>
+
+</html>
